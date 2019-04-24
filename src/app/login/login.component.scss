@@ -4,7 +4,7 @@
 
 html,
 body {
-  background-image: url('../../assets/100.jpg');
+  background-image: url('../../assets/Army.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   height: 100%;
@@ -32,12 +32,14 @@ body {
   margin-bottom: auto;
   width: 400px;
   background-color: rgba(0, 0, 0, 0.5) !important;
+  
 }
 
 .social_icon span {
-  font-size: 60px;
+  font-size: 30px;
   margin-left: 10px;
-  color: #32f9dd;
+  margin-top: 50px;
+  color: #ffffff;
 }
 
 .social_icon span:hover {
