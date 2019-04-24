@@ -8,13 +8,13 @@ body {
   //   background-size: cover;
   //   background-repeat: no-repeat;
   height: 100%;
-  font-family: 'Numans', sans-serif;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .logo-container {
-  width: 50%;
+  width: 40%;
   margin: auto;
-  margin-top: -48px;
+  margin-top: -20px;
   margin-bottom: 10px;
 
   img {
@@ -32,37 +32,39 @@ body {
 }
 
 .card {
-  margin-top: 56px;
-  margin-bottom: 30px;
-  width: 400px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  width: 500px;
   //   background-color: rgba(0, 0, 0, 0.5) !important;
-  background-color: rgba(76, 11, 11, 0.88) !important;
+  background-color: rgba(228, 167, 220, 0.88) !important;
 }
 
 .social_icon span {
-  font-size: 60px;
+  font-size: 40px;
+  margin-top: 50px;
   margin-left: 10px;
-  color: #32f9dd;
+  
 }
 
 .social_icon span:hover {
-  color: white;
+  color: black;
   cursor: pointer;
 }
 
 .card-header h3 {
-  color: white;
+  color: #034218;
 }
 
 .social_icon {
   position: absolute;
   right: 20px;
   top: -45px;
+  color: #e664c9;
 }
 
 .input-group-prepend span {
   width: 50px;
-  background-color: rgb(67, 54, 184);
+  background-color: #e664c9;
   color: black;
   border: 0 !important;
 }
@@ -86,7 +88,7 @@ input:focus {
 
 .login_btn {
   color: black;
-  background-color: #FFC312;
+  background-color: #e664c9;
   width: 100px;
 }
 
