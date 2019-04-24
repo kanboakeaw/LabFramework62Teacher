@@ -4,7 +4,7 @@
 
 html,
 body {
-  background-image: url('http://getwallpapers.com/wallpaper/full/a/5/d/544750.jpg');
+  background-image: url('../../assets/bg_taketoyou_2.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   height: 100%;
@@ -37,7 +37,7 @@ body {
 .social_icon span {
   font-size: 60px;
   margin-left: 10px;
-  color: #32f9dd;
+  color: #3250f9;
 }
 
 .social_icon span:hover {
@@ -57,7 +57,7 @@ body {
 
 .input-group-prepend span {
   width: 50px;
-  background-color: #FFC312;
+  background-color: rgb(22, 18, 255);
   color: black;
   border: 0 !important;
 }
@@ -81,7 +81,7 @@ input:focus {
 
 .login_btn {
   color: black;
-  background-color: #FFC312;
+  background-color: rgb(18, 34, 255);
   width: 100px;
 }
 
