@@ -25,24 +25,24 @@ body {
 .container-fluid {
   //   height: 100%;
   //   background-image: url('http://getwallpapers.com/wallpaper/full/a/5/d/544750.jpg');
-  background-image: url('../../assets/classroom.jpg');
+  background-image: url('../../assets/cyber_bg.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   align-content: center;
 }
 
 .card {
-  margin-top: 56px;
-  margin-bottom: 30px;
+  margin-top: 30px;
+  margin-bottom: 0px;
   width: 400px;
   //   background-color: rgba(0, 0, 0, 0.5) !important;
-  background-color: rgba(76, 11, 11, 0.88) !important;
+  background-color: rgba(19, 61, 201, 0.88) !important;
 }
 
 .social_icon span {
   font-size: 60px;
   margin-left: 10px;
-  color: #32f9dd;
+  color: #f8e21c;
 }
 
 .social_icon span:hover {
@@ -62,7 +62,7 @@ body {
 
 .input-group-prepend span {
   width: 50px;
-  background-color: rgb(67, 54, 184);
+  background-color: rgb(120, 45, 241);
   color: black;
   border: 0 !important;
 }
