@@ -37,13 +37,14 @@ body {
   margin-bottom: 30px;
   width: 400px;
   //   background-color: rgba(0, 0, 0, 0.5) !important;
-  background-color:goldenrod !important;
+  background-color:rgb(245, 243, 158) !important;
 }
 
 .social_icon span {
-  font-size: 60px;
+  font-size: 30px;
   margin-left: 10px;
-  color: #32f9dd;
+  margin-top:50px;
+  color:rgb(243, 97, 146);
 }
 
 .social_icon span:hover {
@@ -63,7 +64,8 @@ body {
 
 .input-group-prepend span {
   width: 50px;
-  background-color: rgb(67, 54, 184);
+  // background-color: rgb(67, 54, 184);
+  background-color:rgb(149, 213, 233);
   color: black;
   border: 0 !important;
 }
