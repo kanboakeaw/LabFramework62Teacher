@@ -4,7 +4,7 @@
 
 html,
 body {
-  background-image: url('http://getwallpapers.com/wallpaper/full/a/5/d/544750.jpg');
+  background-image: url('../../assets/benjamas_post_5_img_20120925094309.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   height: 100%;
@@ -28,15 +28,17 @@ body {
 }
 
 .card {
-  margin-top: auto;
-  margin-bottom: auto;
+  margin-top: 200px;
+  // margin-bottom: auto;
+  margin-left: 300px;
   width: 400px;
   background-color: rgba(0, 0, 0, 0.5) !important;
 }
 
 .social_icon span {
-  font-size: 60px;
+  font-size: 30px;
   margin-left: 10px;
+  margin-top:50px;
   color: #32f9dd;
 }
 
@@ -58,7 +60,7 @@ body {
 .input-group-prepend span {
   width: 50px;
   background-color: #FFC312;
-  color: black;
+  color: rgb(40, 68, 228);
   border: 0 !important;
 }
 
