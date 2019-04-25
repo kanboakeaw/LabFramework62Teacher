@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent implements OnInit {
+  constructor (private router:Router)
 
-  constructor() { }
+  { }
 
   ngOnInit() {
   }
 
+   onSubmit(){
+     this.router.navigate(["/homte]);
+   } 
 }
