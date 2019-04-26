@@ -36,7 +36,7 @@ body {
   margin-bottom: 30px;
   width: 400px;
   //   background-color: rgba(0, 0, 0, 0.5) !important;
-  background-color: rgba(86, 17, 114, 0.88) !important;
+  background-color: rgba(30, 2, 41, 0.88) !important;
 }
 
 .social_icon span {
@@ -62,7 +62,7 @@ body {
 
 .input-group-prepend span {
   width: 50px;
-  background-color: rgb(67, 54, 184);
+  background-color: rgb(204, 19, 250);
   color: black;
   border: 0 !important;
 }
@@ -101,4 +101,10 @@ input:focus {
 
 .links a {
   margin-left: 4px;
+}
+
+.social_icon span {
+  font-size: 60px;
+  margin-left: 10px;
+  color: #ff0080;
 }
