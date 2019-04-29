@@ -35,9 +35,7 @@ export class RegisterComponent implements OnInit {
 
   get f() {//เข้าถึงฟอร์มไม่ได้
     // เข้าถึงค่าของฟอร์ม
-    return this.registerForm.controls;
-  
- 
+    return this.registerForm.controls; 
   }
 
   onSubmit() {
@@ -46,7 +44,7 @@ export class RegisterComponent implements OnInit {
     console.log(this.f.rank.value); 
 
 //alert(this.f.rank.value);
-alert('firstname = ' + this.f.first_name.value);
+//alert('firstname = ' + this.f.first_name.value);
     if (!this.registerForm.invalid) {
       this.backendService
       .register(
@@ -61,7 +59,7 @@ alert('firstname = ' + this.f.first_name.value);
         .subscribe(data => {
           if (data) {
             alert("Register success!");
-            this.router.navigate(["/home"]);
+            this.router.navigate(["/login"]);
           }
         });
     } else {

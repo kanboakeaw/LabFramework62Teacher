@@ -1,8 +1,7 @@
-import { Injectable } from '@angular/core';
+import { Injectable } from "@angular/core";
 import { Observable } from "rxjs";
 import { HttpClient, HttpHeaders } from "@angular/common/http";
 import { tap } from "rxjs/operators";
-
 
 const authServiceUrl = "http://localhost:3000/";
 
@@ -13,31 +12,38 @@ const httpOptions = {
 };
 
 @Injectable({
- providedIn: 'root'
+  providedIn: "root"
 })
 export class BackendService {
- constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient) {}
 
- register(
-   rank: string,
-   first_name: string,
-   last_name: string,
-   id_mil: string,
-   unit_name: string,
-   username: string,
-   password: string
- ): Observable<any> {
-   return this.http
-     .post<any>(
-      authServiceUrl + "login/register",
-         { rank, first_name, last_name, id_mil, unit_name, username, password },
-        //{ rand:'rank', first_name:'first_name', last_name:'last_name', id_mil:'id_mil', unit_name:'unit_name', username:'username', password:'password' },
-       httpOptions
-     )
-     .pipe();
- }
+  register(
+    rank: string,
+    first_name: string,
+    last_name: string,
+    id_mil: string,
+    unit_name: string,
+    username: string,
+    password: string
+  ): Observable<any> {
+    return this.http
+      .post<any>(
+        authServiceUrl + "login/register",
+        { rank, first_name, last_name, id_mil, unit_name, username, password },
+        httpOptions
+      )
+      .pipe();
+  }
+
+
+
+  login(username: string, password: string) {
+    return this.http
+      .post<any>(
+        authServiceUrl + "login/login",
+        { username, password },
+        httpOptions
+      )
+      .pipe();
+  }
 }
-
-
-
-
