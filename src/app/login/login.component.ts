@@ -10,6 +10,8 @@ import { FormBuilder, Validators, FormGroup } from "@angular/forms";
 })
 export class LoginComponent implements OnInit {
   loginForm: FormGroup;
+  submitting: Boolean = false;
+
   constructor(
     private formBuilder: FormBuilder,
     private router: Router,
@@ -31,6 +33,7 @@ export class LoginComponent implements OnInit {
 
   onSubmit() {
     // เมื่อเรากดปุ่ม login ให้มาที่ ฟังก์ชั่นนี้
+    this.submitting = true;
     if (!this.loginForm.invalid) {
       this.backendService
         .login(this.f.username.value, this.f.password.value)
@@ -42,9 +45,11 @@ export class LoginComponent implements OnInit {
             alert("login fail!");
             this.router.navigate(["/login"]);
           }
+          this.submitting = false;
         });
     } else {
       alert("Invalid!"); // show mesage กรณีกรอกข้อมูลไม่ครบใน input
+      this.submitting = false;
     }
   }
 }
