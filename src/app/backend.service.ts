@@ -27,7 +27,7 @@ export class BackendService {
       })
     };
   }
-  6;
+  //6;
   register(
     rank: string,
     first_name: string,
@@ -93,5 +93,15 @@ export class BackendService {
     } else {
       return false;
     }
+  }
+  countAllUser() {
+    return this.http
+      .get<any>(authServiceUrl + "user/list-count", httpOptions)
+      .pipe();
+  }
+  getListUser(pageNumber: number) {
+    return this.http
+      .get<any>(authServiceUrl + "user/list/" + pageNumber, httpOptions)
+      .pipe();
   }
 }
