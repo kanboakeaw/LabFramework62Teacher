@@ -3,8 +3,8 @@ import { Observable } from "rxjs";
 import { HttpClient, HttpHeaders } from "@angular/common/http";
 import { tap } from "rxjs/operators";
 
-const authServiceUrl = "http://localhost:3000/";
-
+//const authServiceUrl = "http://localhost:3000/";
+const authServiceUrl = "https://backend-framework62-kim.herokuapp.com/";
 const httpOptions = {
   headers: new HttpHeaders({
     "Content-Type": "application/json"
@@ -30,6 +30,16 @@ export class BackendService {
       .post<any>(
         authServiceUrl + "login/register",
         { rank, first_name, last_name, id_mil, unit_name, username, password },
+        httpOptions
+      )
+      .pipe();
+  }
+
+  login(username: string, password: string) {
+    return this.http
+      .post<any>(
+        authServiceUrl + "login/login",
+        { username, password },
         httpOptions
       )
       .pipe();
